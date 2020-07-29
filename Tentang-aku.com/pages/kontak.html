@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang-aku.com - Kontak</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header>
+          <h1>Tentang-aku.com</h1>
+          <img src="../img/aku.jpg" />
+          <nav>
+            <ul>
+              <li><a href="../tentang-aku.html">Home</a></li>
+              <li>
+                Kegiatanku
+                <div class="sub-menu">
+                  <ol>
+                    <li><a href="hobi.html">Hobi</a></li>
+                    <li><a href="sekolah.html">Sekolah</a></li>
+                    <li><a href="cita-cita.html">Cita-cita</a></li>
+                    <li><a href="next-10-years.html">Next 10 years</a></li>
+                  </ol>
+                </div>
+              </li>
+              <li class="active"><a href="kontak.html">kontak</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section>
+          <form action="../tentang-aku.html" method="GET">
+            <fieldset>
+              <legend>Daftarkan Diri Anda</legend>
+              <label for="nama"><span class="rapi"> Nama </span> :</label>
+              <input
+                type="text"
+                name="nama"
+                id="nama"
+                placeholder="Nama Anda !"
+                required
+              />
+              <br />
+              <label for="nomer-hp"><span class="rapi">No HP</span> :</label>
+              <input
+                type="number"
+                name="nomer-hp"
+                id="nomer-hp"
+                placeholder="Nomer HP Anda !"
+                required
+              />
+              <br />
+              <label for="alamat" id="atur"><span class="rapi">Alamat</span> :</label>
+              <textarea
+                name="alamat"
+                id="alamat"
+                placeholder="Alamat Anda!"
+              ></textarea>
+              <br />
+              <label for=""><span class="rapi">Jenis Kelamin</span> :</label><br class="ada">
+              <input type="radio" name="jenis-kelamin" id="pria" /><label
+                for="pria"
+                >Pria</label
+              >
+              <input type="radio" name="jenis-kelamin" id="wanita" /><label
+                for="wanita"
+                >Wanita</label
+              >
+              <br />
+              <label for=""><span class="rapi">T. Lahir</span> :</label><br class="ada">
+              <label for="TL">Tanggal</label>
+              <select name="TL" id="TL">
+                <option value="" selected></option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+                <option value="">31</option>
+              </select>
+              <label for="bulan">Bulan</label>
+              <select name="bulan" id="bulan">
+                <option selected></option>
+                <option>Januari</option>
+                <option>Februari</option>
+                <option>Maret</option>
+                <option>April</option>
+                <option>Mei</option>
+                <option>Juni</option>
+                <option>Juli</option>
+                <option>Agustus</option>
+                <option>September</option>
+                <option>Oktober</option>
+                <option>November</option>
+                <option>Desember</option>
+              </select>
+              <label for="tahun">Tahun</label>
+              <input type="number" name="tahun" id="tahun" />
+              <br />
+              <label for=""><span class="rapi"> Hobi </span> :</label><br class="ada">
+              <input type="checkbox" name="hobi" id="olahraga" /><label
+                for="olahraga"
+                >Olahraga</label
+              ><br class="ada">
+              <input type="checkbox" name="hobi" id="jalan-jalan" /><label
+                for="jalan-jalan"
+                >Traveling</label
+              ><br class="ada">
+              <input type="checkbox" name="hobi" id="baca" /><label for="baca"
+                >Baca Buku</label
+              >
+              <br />
+              <label for="email"><span class="rapi"> Email</span> :</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Anda !"
+                required
+              />
+              <br />
+              <label for="password"
+                ><span class="rapi"> Password </span> :</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password Anda!"
+                required
+              />
+              <br />
+              <button type="submit">Kirim</button>
+            </fieldset>
+          </form>
+        </section>
+        <footer>
+          <p id="footer">
+            <i class="fa fa-copyright" aria-hidden="true"
+              >Created by : Fitranda Ramadhana</i
+            >
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

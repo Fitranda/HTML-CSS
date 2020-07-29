@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+  margin-top: 4%;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+header img {
+  width: 30%;
+  height: auto;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+header h1 {
+  text-align: center;
+}
+
+section {
+  margin-top: 2%;
+}
+
+footer {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Dropdown */
+
+nav {
+  background: darkgreen;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2%;
+  /* width: 120%;
+    margin-left: -10%; */
+}
+
+nav ul {
+  display: inline-flex;
+  color: white;
+  list-style: none;
+}
+
+nav ul li {
+  /* width: 120 px; */
+  margin: 4%;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+}
+
+nav ul li:hover,
+.active {
+  background-color: green;
+}
+
+nav ul li .sub-menu {
+  display: none;
+}
+
+.sub-menu ol {
+  list-style: none;
+  display: block;
+  margin: 10px;
+}
+
+nav ul li:hover .sub-menu,
+nav ul li .sub-menu:hover {
+  display: block;
+  position: absolute;
+  background: darkgreen;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.sub-menu ol li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  background: transparent;
+  text-align: left;
+}
+
+.sub-menu ol li:hover {
+  background: darkgreen;
+  border: none;
+}
+
+.sub-menu ol li:last-child {
+  border-bottom: none;
+}
+
+.sub-menu ol li a:hover {
+  color: lightgreen;
+}
+
+.active2{
+  border: none;
+  color: lightgreen;
+}
+
+/* Paragaf */
+
+p {
+  font-size: 15px;
+  text-indent: 20px;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 1%;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  clear: both;
+}
+
+section img {
+  margin-bottom: 1%;
+  float: left;
+  margin-right: 1%;
+}
+
+.rapi {
+  width: 80px;
+  display: inline-block;
+}
+
+.paragaf{
+  line-height: 1.5;
+}
+
+#footer{
+  text-align: center;
+}
+
+#biodata{
+  text-align: left;
+  text-indent: unset;
+}
+
+/* FORM */
+
+form{
+  font-size: 16px;
+}
+
+legend{
+  font-size: 24px;
+  padding: 5px 10px;
+  background-color: darkblue;
+  color: white;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+fieldset{
+  padding: 15px 30px;
+}
+
+.ada{
+  display: none;
+}
+
+form .rapi {
+  width: 110px;
+  font-weight: bold;
+}
+
+input:focus{
+  background-color: lightblue;
+}
+
+textarea:focus{
+  background-color: lightblue;
+}
+
+#nama,#nomer-hp,#alamat,#email,#password{
+  width: 30%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 30px;
+  outline: none;
+  padding: 12px 15px;
+  border: 2px solid blue;
+}
+
+#tahun{
+  outline: none;
+  padding-left: 10px;
+  border: 2px solid blue;
+}
+
+#alamat{
+  height: 60px;
+  resize: none;
+}
+
+#atur{
+  margin-top: 1%;
+  float: left;
+  margin-right: 5px;
+}
+
+select{
+  border: 2px solid blue;
+}
+
+select:focus{
+  background-color: lightblue;
+}
+
+#TL,#bulan,#tahun{
+  margin: 1% 1% 1% 0;
+}
+
+#pria,#wanita,input[type=checkbox]{
+  margin: 1% 0.5% 1% 1%;
+}
+
+button{
+  background: darkblue;
+  color: white;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  width: 70px;
+  padding: 15px;
+  margin-left: 20%;
+  margin-bottom: 2%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+button:hover{
+  background: lightblue;
+  color: black;
+}
+
+/* Dibawah 600px */
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+  }
+
+  header img {
+    width: 264px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  nav {
+    font-size: 16px;
+  }
+
+  nav ul li {
+    padding: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 1%;
+  }
+
+  .sub-menu {
+    top: 230px;
+  }
+
+  section img{
+    margin-right: 10px;
+  }
+
+  .paragaf{
+    line-height: 1.2;
+  }
+
+  form{
+    font-size: 16px;
+  }
+
+  legend{
+    font-size: 20px;
+  }
+
+  fieldset{
+    padding: 5px 10px;
+  }
+
+  form .rapi{
+    margin-top: 10px;
+  }
+
+  #nama,#nomer-hp,#alamat,#email,#password{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #TL,#bulan,#tahun{
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .ada{
+    display: block;
+  }
+}
